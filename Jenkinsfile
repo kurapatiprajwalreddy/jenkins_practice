@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: "${BRANCH_NAME}", url: 'git@github.com:Shivmangal-Singh/cicd-pipeline.git'
+                checkout scm
             }
         }
 
